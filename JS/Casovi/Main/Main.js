@@ -6,6 +6,7 @@
 // function fja(arg1,arg2){
 //         console.log(`Ime:${arg1} i prezime ${arg2}`)
 // }
+//
 
 // obj.godine = '25'
 // // console.log(obj.ime)
