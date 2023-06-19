@@ -457,11 +457,13 @@ const addButton = document.getElementById('addButton')
 const inputContainer = document.getElementById('inputContainer')
 
 let vrednost = ""
-
+//Reusable function
 function singleCard(text){
     const kartica = document.createElement('div')
-    kartica.classList.add('task')
-    kartica.innerText = text
+    const el = document.createElement('h3')
+    // kartica.classList.add('task')
+    el.innerText = text
+    kartica.appendChild(el)
     return kartica
 }
 
@@ -478,6 +480,5 @@ addButton.addEventListener('click',(e)=>{
     inputContainer.appendChild(singleCard(vrednost))
     console.log(vrednost)
 })
-
 
 
