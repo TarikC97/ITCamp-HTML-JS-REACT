@@ -432,18 +432,52 @@
 
 //////////Profesor zadatak/////////
 ///Ubaci u svaki niz broj kola.
-const automobil ={
-    aldin: ["vw","audi"],
-    tajra: ["golf","audi","bmw"],
-    iman: ["peugeot","fiat","citroen"],
-    bronja: ["pagani","mclaren","Rollce roys"]
-}
-var keys = Object.keys(automobil)
-var values = Object.values(automobil)
-console.log(values)
-var auto2 = values.map((el)=>el+el.length)
-console.log(auto2)
+// const automobil ={
+//     aldin: ["vw","audi"],
+//     tajra: ["golf","audi","bmw"],
+//     iman: ["peugeot","fiat","citroen"],
+//     bronja: ["pagani","mclaren","Rollce roys"]
+// }
+// var keys = Object.keys(automobil)
+// var values = Object.values(automobil)
+// console.log(values)
+// var auto2 = values.map((el)=>el+el.length)
+// console.log(auto2)
 
-//Github search app updated
-//Prazan div za laoder , prazan div za input , on click doesnt move input above or under.
+// //Github search app updated
+// //Prazan div za laoder , prazan div za input , on click doesnt move input above or under.
+// //Even function - pretvara string u broj.
+
+
+//////////////////DOM(Document object model)////////////////
+///////////////////To Do List////////////////
+
+const inputText = document.getElementById('inputText')
+const addButton = document.getElementById('addButton')
+const inputContainer = document.getElementById('inputContainer')
+
+let vrednost = ""
+
+function singleCard(text){
+    const kartica = document.createElement('div')
+    kartica.classList.add('task')
+    kartica.innerText = text
+    return kartica
+}
+
+console.log(inputText)
+console.log(inputContainer)
+inputText.addEventListener('input',(e)=>{
+    vrednost = e.target.value
+})
+
+addButton.addEventListener('click',(e)=>{
+    e.preventDefault()
+    console.log(vrednost)
+    inputText.value = ""
+    inputContainer.appendChild(singleCard(vrednost))
+    console.log(vrednost)
+})
+
+
 
