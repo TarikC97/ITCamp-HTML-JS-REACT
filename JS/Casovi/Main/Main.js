@@ -320,7 +320,7 @@
 // console.log(Object.keys(objectProba))//Vraca niz propertia
 // console.log(Object.values(objectProba))//Vraca niz vrednosti
 
-// //Obnova nizova
+//////////////Obnova nizova//////////
 // const niz = [1,2,3,4,5,6]
 // const noviNiz = niz.map(el=>el*el)
 // console.log(noviNiz)
