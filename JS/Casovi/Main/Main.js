@@ -470,7 +470,7 @@
 // console.log(inputText)
 // console.log(inputContainer)
 // inputText.addEventListener('input',(e)=>{
-//     vrednost = e.target.value
+//     vrednost= = e.target.value
 // })
 
 // addButton.addEventListener('click',(e)=>{
@@ -483,5 +483,19 @@
 
 ///////////////////////Calculator///////////////
 
-console.log('Proba')
+const buttons = document.querySelectorAll("button")
+const equals = document.getElementById("equals")
 
+let result=""
+buttons.forEach((button)=>{
+    button.addEventListener("click",(e)=>{
+         let vrednost= e.target.value
+         result += vrednost
+         console.log(result);
+    })
+})
+
+equals.addEventListener("click",(e)=>{
+    e.preventDefault()
+    console.log(eval(result))
+})
