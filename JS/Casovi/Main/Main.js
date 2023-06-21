@@ -452,33 +452,36 @@
 //////////////////DOM(Document object model)////////////////
 ///////////////////To Do List////////////////
 
-const inputText = document.getElementById('inputText')
-const addButton = document.getElementById('addButton')
-const inputContainer = document.getElementById('inputContainer')
+// const inputText = document.getElementById('inputText')
+// const addButton = document.getElementById('addButton')
+// const inputContainer = document.getElementById('inputContainer')
 
-let vrednost = ""
-//Reusable function
-function singleCard(text){
-    const kartica = document.createElement('div')
-    const el = document.createElement('h3')
-    // kartica.classList.add('task')
-    el.innerText = text
-    kartica.appendChild(el)
-    return kartica
-}
+// let vrednost = ""
+// //Reusable function
+// function singleCard(text){
+//     const kartica = document.createElement('div')
+//     const el = document.createElement('h3')
+//     // kartica.classList.add('task')
+//     el.innerText = text
+//     kartica.appendChild(el)
+//     return kartica
+// }
 
-console.log(inputText)
-console.log(inputContainer)
-inputText.addEventListener('input',(e)=>{
-    vrednost = e.target.value
-})
+// console.log(inputText)
+// console.log(inputContainer)
+// inputText.addEventListener('input',(e)=>{
+//     vrednost = e.target.value
+// })
 
-addButton.addEventListener('click',(e)=>{
-    e.preventDefault()
-    console.log(vrednost)
-    inputText.value = ""
-    inputContainer.appendChild(singleCard(vrednost))
-    console.log(vrednost)
-})
+// addButton.addEventListener('click',(e)=>{
+//     e.preventDefault()
+//     console.log(vrednost)
+//     inputText.value = ""
+//     inputContainer.appendChild(singleCard(vrednost))
+//     console.log(vrednost)
+// })
 
+///////////////////////Calculator///////////////
+
+console.log('Proba')
 

@@ -4,19 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .mainContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        .mainCalculator{
+            background-color: silver;
+            width: 30vw;
+            height: 70vh;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        .headerCalculator{
+            margin: 5%;
+            width: 27vw;
+            height: 10vh;
+            background-color: antiquewhite;
+        }
+        .displayCalculator{
+            margin: 5%;
+            width: 27vw;
+            height: 50vh;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: space-between;
+        }
+        .calculatorButtons{
+            height: 80%;
+            width: 70% ;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .calculatorButton{
+            margin-top: 5%;
+            width: 30%;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .calculatorSides{
+            margin-top: 4%;
+            height: 80%;
+            width: 30% ;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+        }
+        .calculatorSide{
+            width: 65%;
+            height: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
-    <div id='inputContainer'>
-        <form id="inputForm">
-            <input
-                type="text"
-                placeholder="Enter your task"
-                id="inputText"
-                value=""
-            />
-            <button type="submit" id="addButton">Add</button>
-        </form>
+    <div class="mainContainer">
+        <div class="mainCalculator">
+            <div class="headerCalculator">
+
+            </div>
+            <div class="displayCalculator">
+                <div class="calculatorButtons">
+                    <button class="calculatorButton"><h1>1</h1></button>
+                    <button class="calculatorButton"><h1>2</h1></button>
+                    <button class="calculatorButton"><h1>3</h1></button>
+                    <button class="calculatorButton"><h1>4</h1></button>
+                    <button class="calculatorButton"><h1>5</h1></button>
+                    <button class="calculatorButton"><h1>6</h1></button>
+                    <button class="calculatorButton"><h1>7</h1></button>
+                    <button class="calculatorButton"><h1>8</h1></button>
+                    <button class="calculatorButton"><h1>9</h1></button>
+                </div>
+                <div class="calculatorSides">
+                    <button class="calculatorSide"><h1>+</h1></button>
+                    <button class="calculatorSide"><h1>-</h1></button>
+                    <button class="calculatorSide"><h1>*</h1></button>
+                    <button class="calculatorSide"><h1>/</h1></button>
+                </div>
+            </div>
+        </div>
     </div>
+    
     <script src="Main.js"></script>
 </body>
 </html>
