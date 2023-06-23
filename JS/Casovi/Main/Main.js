@@ -518,10 +518,25 @@ const dogs = [
     {weight:32,curFood: 340,owners:['Michael']},
 ]
 
-dogs.forEach((dog)=>{
-     return {
-        ...dog,
-        recFood: (dog.weight**0.75)*28
-     }
-})
+// dogs.forEach((dog)=>{
+//      return {
+//         ...dog,
+//         recFood: (dog.weight**0.75)*28
+//      }
+// })
+for(i=0;i<dogs.length;i++){
+    dogs[i] = {
+        ...dogs[i],
+        recFood: (((((dogs[i].weight)*1000)**0.75)*28)/1000).toString().slice(0,2)
+    }
+}
 console.log(dogs)
+
+const SarahDog = (dogs.find((dog) => dog.owners.find((el)=> el==='Sarah')))
+console.log(SarahDog)
+if(+SarahDog.recFood < SarahDog.curFood *1.1){
+    console.log("Jede vise")
+}
+else{
+    console.log("Jede manje")
+}
