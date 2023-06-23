@@ -484,18 +484,25 @@
 ///////////////////////Calculator///////////////
 
 const buttons = document.querySelectorAll("button")
-const equals = document.getElementById("equals")
+let equals = document.getElementById("equals")
+let input = document.getElementById("input")
 
 let result=""
 buttons.forEach((button)=>{
     button.addEventListener("click",(e)=>{
-         let vrednost= e.target.value
-         result += vrednost
-         console.log(result);
+        if( e.target.value === "="){
+            return;
+        }
+        else{
+            let vrednost= e.target.value
+            result += vrednost
+            console.log(result)
+        }
     })
 })
 
-equals.addEventListener("click",(e)=>{
-    e.preventDefault()
-    console.log(eval(result))
-})
+ equals.addEventListener("click",(e)=>{
+     e.preventDefault()
+     console.log(eval(result))
+     input.innerText = eval(result)
+ })
