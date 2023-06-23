@@ -483,26 +483,45 @@
 
 ///////////////////////Calculator///////////////
 
-const buttons = document.querySelectorAll("button")
-let equals = document.getElementById("equals")
-let input = document.getElementById("input")
+// const buttons = document.querySelectorAll("button")
+// let equals = document.getElementById("equals")
+// let display = document.getElementById("display")
+// const newP = document.createElement("p")
 
-let result=""
-buttons.forEach((button)=>{
-    button.addEventListener("click",(e)=>{
-        if( e.target.value === "="){
-            return;
-        }
-        else{
-            let vrednost= e.target.value
-            result += vrednost
-            console.log(result)
-        }
-    })
+// let result=""
+// buttons.forEach((button)=>{
+//     button.addEventListener("click",(e)=>{
+//         if( e.target.value === "="){
+//             return;
+//         }
+//         else{
+//             let vrednost= e.target.value
+//             result += vrednost
+//             console.log(result)
+//         }
+//     })
+// })
+//  equals.addEventListener("click",(e)=>{
+//      e.preventDefault()
+//      newP.innerText = eval(result)
+//      display.appendChild(newP)     
+//      console.log(eval(result))
+//  })
+
+
+//////////////////Zadatak ALdin//////////////
+
+const dogs = [
+    {weight:22,curFood: 250,owners:['Alice','Bob']},
+    {weight:8,curFood: 200,owners:['Matilda']},
+    {weight:13,curFood: 275,owners:['Sarah','John']},
+    {weight:32,curFood: 340,owners:['Michael']},
+]
+
+dogs.forEach((dog)=>{
+     return {
+        ...dog,
+        recFood: (dog.weight**0.75)*28
+     }
 })
-
- equals.addEventListener("click",(e)=>{
-     e.preventDefault()
-     console.log(eval(result))
-     input.innerText = eval(result)
- })
+console.log(dogs)
