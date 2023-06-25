@@ -517,21 +517,22 @@ const dogs = [
     {weight:13,curFood: 275,owners:['Sarah','John']},
     {weight:32,curFood: 340,owners:['Michael']},
 ]
-
 // dogs.forEach((dog)=>{
 //      return {
 //         ...dog,
 //         recFood: (dog.weight**0.75)*28
 //      }
 // })
+///1
 for(i=0;i<dogs.length;i++){
     dogs[i] = {
         ...dogs[i],
-        recFood: (((((dogs[i].weight)*1000)**0.75)*28)/1000).toString().slice(0,2)
+        recFood: ((dogs[i].weight**0.75)*28).toFixed(0)
     }
 }
 console.log(dogs)
 
+///2
 const SarahDog = (dogs.find((dog) => dog.owners.find((el)=> el==='Sarah')))
 console.log(SarahDog)
 if(+SarahDog.recFood < SarahDog.curFood *1.1){
@@ -540,3 +541,4 @@ if(+SarahDog.recFood < SarahDog.curFood *1.1){
 else{
     console.log("Jede manje")
 }
+///3
