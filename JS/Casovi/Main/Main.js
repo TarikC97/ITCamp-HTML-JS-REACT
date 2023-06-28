@@ -542,3 +542,10 @@ else{
     console.log("Jede manje")
 }
 ///3
+
+
+///4
+
+
+
+///5
