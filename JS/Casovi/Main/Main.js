@@ -511,12 +511,12 @@
 
 //////////////////Zadatak ALdin//////////////
 
-const dogs = [
-    {weight:22,curFood: 250,owners:['Alice','Bob']},
-    {weight:8,curFood: 200,owners:['Matilda']},
-    {weight:13,curFood: 275,owners:['Sarah','John']},
-    {weight:32,curFood: 340,owners:['Michael']},
-]
+// const dogs = [
+//     {weight:22,curFood: 250,owners:['Alice','Bob']},
+//     {weight:8,curFood: 200,owners:['Matilda']},
+//     {weight:13,curFood: 275,owners:['Sarah','John']},
+//     {weight:32,curFood: 340,owners:['Michael']},
+// ]
 // dogs.forEach((dog)=>{
 //      return {
 //         ...dog,
@@ -524,36 +524,74 @@ const dogs = [
 //      }
 // })
 ///1
-for(i=0;i<dogs.length;i++){
-    dogs[i] = {
-        ...dogs[i],
-        recFood: ((dogs[i].weight**0.75)*28).toFixed(0)
-    }
-}
-console.log(dogs)
+// for(i=0;i<dogs.length;i++){
+//     dogs[i] = {
+//         ...dogs[i],
+//         recFood: ((dogs[i].weight**0.75)*28).toFixed(0)
+//     }
+// }
+// console.log(dogs)
 
-///2
-const SarahDog = (dogs.find((dog) => dog.owners.find((el)=> el==='Sarah')))
-console.log(SarahDog)
-if(+SarahDog.recFood < SarahDog.curFood *1.1){
-    console.log("Jede vise")
-}
-else{
-    console.log("Jede manje")
-}
+// ///2
+// const SarahDog = (dogs.find((dog) => dog.owners.find((el)=> el==='Sarah')))
+// console.log(SarahDog)
+// if(+SarahDog.recFood < SarahDog.curFood *1.1){
+//     console.log("Jede vise")
+// }
+// else{
+//     console.log("Jede manje")
+// }
 ///3
-
-
 ///4
-
-
-
 ///5
-
-
-
-
-/////6
-
-
+///6
 ///7
+///Call Stack - Mehmed Muratovic
+/////Three parts
+/// Call - Webapi - Eventloop(Za asinhrone fje)
+///CallStack
+//pushtreca() 
+//pushprva()
+//pushdruga()
+//console.log -druga> console.log -prva> console.log->treca
+//Pop treca, pa rest...
+//Kad je prazan call stack,
+// onda event loop gleda ima li nesto sto nije izvrseno.
+// function prva(){
+//     console.log("prva")
+//     treca()
+// }
+// //Delay 0,3s Prva->Treca->Druga
+// function druga(){
+//     setTimeout(()=>{
+//         console.log("druga")
+//     },300)
+//     prva();
+// }
+// function treca(){
+//     console.log("treca")
+// }
+// druga()
+
+
+///////////////////////Asinhroni JS///////////////
+
+//Promise - pending - fulfill - then(async-action)
+const prviPromis = new Promise((res,rej)=>{
+    let age = 7
+    setTimeout(()=>{
+        if(age> 6){
+            res(age)
+        }
+        //res- resolve, rej - reject
+        else{
+            rej("greska")
+        }
+    },300)
+})
+//Argument el -> resolve
+prviPromis
+// .then((el)=> el)
+.then((data)=> console.log(`Prvi then ${data}`))
+.catch((data) => console.log(`Drugi then ${data}`))
+.finally(()=>console.log('Validacija 2 then, void fja'))
