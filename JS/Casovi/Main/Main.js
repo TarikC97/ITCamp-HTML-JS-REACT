@@ -577,21 +577,32 @@
 ///////////////////////Asinhroni JS///////////////
 
 //Promise - pending - fulfill - then(async-action)
-const prviPromis = new Promise((res,rej)=>{
-    let age = 7
-    setTimeout(()=>{
-        if(age> 6){
-            res(age)
-        }
-        //res- resolve, rej - reject
-        else{
-            rej("greska")
-        }
-    },300)
-})
-//Argument el -> resolve
-prviPromis
-// .then((el)=> el)
-.then((data)=> console.log(`Prvi then ${data}`))
-.catch((data) => console.log(`Drugi then ${data}`))
-.finally(()=>console.log('Validacija 2 then, void fja'))
+// const prviPromis = new Promise((res,rej)=>{
+//     let age = 7
+//     setTimeout(()=>{
+//         if(age> 6){
+//             res(age)
+//         }
+//         //res- resolve, rej - reject
+//         else{
+//             rej("greska")
+//         }
+//     },300)
+// })
+// //Argument el -> resolve
+// prviPromis
+// // .then((el)=> el)
+// .then((data)=> console.log(`Prvi then ${data}`))
+// .catch((data) => console.log(`Drugi then ${data}`))
+// .finally(()=>console.log('Validacija 2 then, void fja'))
+
+///////////05-07-23///////
+
+const fetchData = ()=>{
+    let unos = prompt("Unesi broj izmedju 0 i 200")
+    fetch(`https://jsonplaceholder.typicode.com/todos/${unos}`)
+    .then((response) => response.json())
+    .then((json)=> console.log(json))
+    .catch((err)=> console.log(err,"Error neki!"))
+}
+fetchData()
