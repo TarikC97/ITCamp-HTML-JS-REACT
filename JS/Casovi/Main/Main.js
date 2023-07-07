@@ -598,11 +598,44 @@
 
 ///////////05-07-23///////
 
-const fetchData = ()=>{
-    let unos = prompt("Unesi broj izmedju 0 i 200")
-    fetch(`https://jsonplaceholder.typicode.com/todos/${unos}`)
-    .then((response) => response.json())
-    .then((json)=> console.log(json))
-    .catch((err)=> console.log(err,"Error neki!"))
+// const fetchData = ()=>{
+//     let unos = prompt("Unesi broj izmedju 0 i 200")
+//     fetch(`https://jsonplaceholder.typicode.com/todos/${unos}`)
+//     .then((response) => response.json())
+//     .then((json)=> console.log(json))
+//     .catch((err)=> console.log(err,"Error neki!"))
+// }
+// fetchData()
+
+
+////Mehmed zadatak//////
+// const niz = [
+//     'apple','pear',
+//     ['apple','berry'],
+//     {fruits:'apple',vegetables:'carrot'}
+// ]
+///Prebrojati sve jabuke!
+
+
+///////////07-07-23////////
+
+const fetchStock = ()=>{
+    fetch(`https://dummyjson.com/carts`)
+    .then((res)=>res.json())
+    .then((obj)=>{
+        // console.log(obj)
+        const obj1 = obj.carts
+        // console.log(obj1)
+        const obj2 = obj1.map((el)=> el)
+        console.log(obj2)
+        // const obj3 = obj2.products
+        const filterNIz = obj2.filter((el)=> el.products.total>900)
+        console.log(filterNIz)
+        // const filterNIz = obj2.filter((el)=> el.total> 53)
+        // console.log(filterNIz)
+        // const product = obj.products
+        // const filterNIz = product.filter((el) => el.stock>68)
+        // console.log(filterNIz)
+    })
 }
-fetchData()
+fetchStock()
