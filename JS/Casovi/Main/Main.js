@@ -669,11 +669,11 @@
 // }
 // fetchData2()
 
-const fetchData3 = async (broj)=>{
+const fetchData3 = async (broj,broj2)=>{
     // const broj = prompt('Unesi broj')
-    const data = await fetch(`https://jsonplaceholder.typicode.com/comments?postId=${broj}`)
+    const data = await fetch(`https://jsonplaceholder.typicode.com/comments?postId=${broj}&id=${broj2}`)
     const result = await data.json()
     console.log(result)
     //Query Params - > ? i &
 }
-fetchData3(1)
+fetchData3(1,3)
