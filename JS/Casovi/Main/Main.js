@@ -619,23 +619,61 @@
 
 ///////////07-07-23////////
 
-const fetchStock = ()=>{
-    fetch(`https://dummyjson.com/carts`)
-    .then((res)=>res.json())
-    .then((obj)=>{
-        // console.log(obj)
-        const obj1 = obj.carts
-        // console.log(obj1)
-        const obj2 = obj1.map((el)=> el)
-        console.log(obj2)
-        // const obj3 = obj2.products
-        const filterNIz = obj2.filter((el)=> el.products.total>900)
-        console.log(filterNIz)
-        // const filterNIz = obj2.filter((el)=> el.total> 53)
-        // console.log(filterNIz)
-        // const product = obj.products
-        // const filterNIz = product.filter((el) => el.stock>68)
-        // console.log(filterNIz)
-    })
+// const fetchStock = ()=>{
+//     fetch(`https://dummyjson.com/carts`)
+//     .then((res)=>res.json())
+//     .then((obj)=>{
+//         // console.log(obj)
+//         const obj1 = obj.carts
+//         // console.log(obj1)
+//         const obj2 = obj1.map((el)=> el)
+//         console.log(obj2)
+//         // const obj3 = obj2.products
+//         const filterNIz = obj2.filter((el)=> el.products.total>900)
+//         console.log(filterNIz)
+//         // const filterNIz = obj2.filter((el)=> el.total> 53)
+//         // console.log(filterNIz)
+//         // const product = obj.products
+//         // const filterNIz = product.filter((el) => el.stock>68)
+//         // console.log(filterNIz)
+//     })
+// }
+// fetchStock()
+
+
+/////////////////10-07-2023//////////
+////Async await///
+
+// const fetchData = async()=>{
+//     const data = await fetch('https://jsonplaceholder.typicode.com/todos')
+//     const result = await data.json()
+//     console.log(result)
+//     const filter = await result.filter((el)=> el.id%2 === 0)
+//     console.log(filter)
+
+//     return {result,filter}
+//     //Kad je isti key i value , mozemo samo da pisemo value result npr.
+//     //return{
+//     //     result:result,
+//     //     filter:filter,
+//     // }
+// }
+// fetchData().then((el)=> console.log(el))
+
+
+// const fetchData2 = async ()=>{
+//     const broj = prompt('Unesi broj')
+//     const data = await fetch(`https://jsonplaceholder.typicode.com/posts/${broj}/comments`)
+//     const result = await data.json()
+//     console.log(result)
+// }
+// fetchData2()
+
+const fetchData3 = async (broj)=>{
+    // const broj = prompt('Unesi broj')
+    const data = await fetch(`https://jsonplaceholder.typicode.com/comments?postId=${broj}`)
+    const result = await data.json()
+    console.log(result)
+    //Query Params - > ? i &
 }
-fetchStock()
+fetchData3(1)
