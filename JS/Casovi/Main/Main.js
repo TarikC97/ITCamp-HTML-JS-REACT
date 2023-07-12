@@ -693,3 +693,16 @@
 // }
 
 ////////////Bronja zadaca--12-07--23//////////
+
+const niz = [1,2,3,4,5,6,7,8,9,10]
+//
+let najveciZbir  = 0;
+let zbirTriCifre = 0;
+
+for(let i=1;i<niz.length-1;i++){
+    zbirTriCifre =
+    niz[i-1]+
+    niz[i]+
+    niz[i+1]
+    console.log(zbirTriCifre)
+}
