@@ -669,11 +669,27 @@
 // }
 // fetchData2()
 
-const fetchData3 = async (broj,broj2)=>{
-    // const broj = prompt('Unesi broj')
-    const data = await fetch(`https://jsonplaceholder.typicode.com/comments?postId=${broj}&id=${broj2}`)
-    const result = await data.json()
-    console.log(result)
-    //Query Params - > ? i &
-}
-fetchData3(1,3)
+// const fetchData3 = async (broj,broj2)=>{
+//     // const broj = prompt('Unesi broj')
+//     const data = await fetch(`https://jsonplaceholder.typicode.com/comments?postId=${broj}&id=${broj2}`)
+//     const result = await data.json()
+//     console.log(result)
+//     //Query Params - > ? i &
+// }
+// fetchData3(1,3)
+
+// const mat = [
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9]
+// ]
+// for(let i=0;i<mat.length;i++){
+//     for(let j =0;j<mat[i].length;j++){
+//         if(i+j == 2){
+//             console.log(mat[i][j])
+//         }
+//     }
+        
+// }
+
+////////////Bronja zadaca--12-07--23//////////
