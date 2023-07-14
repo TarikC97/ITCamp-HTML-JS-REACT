@@ -694,15 +694,57 @@
 
 ////////////Bronja zadaca--12-07--23//////////
 
-const niz = [1,2,3,4,5,6,7,8,9,10]
-//
-let najveciZbir  = 0;
-let zbirTriCifre = 0;
+// const niz = [1,2,3,4,5,6,7,8,9,10]
+// //
+// let najveciZbir  = 0;
+// let zbirTriCifre = 0;
 
-for(let i=1;i<niz.length-1;i++){
-    zbirTriCifre =
-    niz[i-1]+
-    niz[i]+
-    niz[i+1]
-    console.log(zbirTriCifre)
-}
+// for(let i=1;i<niz.length-1;i++){
+//     zbirTriCifre =
+//     niz[i-1]+
+//     niz[i]+
+//     niz[i+1]
+//     console.log(zbirTriCifre,i)
+// }
+/////////////////////14-07-2023//////////////////////
+
+// const func = (a,b,c,d,e) =>{
+//     let max =0;
+//     for(let i =0;i<5;i++){
+//         max = a;
+//         if(b>max){
+//             max=b;
+//             if(c>max){
+//                 max = c;
+//                 if(d>max){
+//                     max = d;
+//                     if(e>max){
+//                         max = e;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     console.log(max)
+//     return max  
+// }
+// func(1,8,3,4,5)
+
+// const niz = [1,2,3,4,5]
+// //Callback je fja koju prosledjujemo kao argument nekoj drugoj funkciji
+// const noviNiz = []
+// const customMap = (niz, callback) =>{
+//     for(let i =0;i<niz.length;i++){
+//         noviNiz.push(callback(niz[i]))
+//     }
+//     return noviNiz
+// }
+// customMap(niz,console.log)
+//Recursion - Fja poziva samu sebe
+// function uvecaj(broj){
+//     if(broj === 10) return
+//     broj++
+//     console.log(broj)
+//     uvecaj(broj)
+// }
+// uvecaj(1)
