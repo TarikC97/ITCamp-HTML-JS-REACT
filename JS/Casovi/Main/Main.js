@@ -748,3 +748,32 @@
 //     uvecaj(broj)
 // }
 // uvecaj(1)
+
+// const niz = [3,7,10,11]
+// const all = niz.every((el)=>el>4)//Return sFalse
+// console.log(all)
+
+const mat =[
+    [4,12,100,3],
+    [2,5,7,9,3],
+    [11,53,75,87],
+    [3],
+    [4],
+]
+const mat2 = [
+    
+    
+]
+for(let i=0;i<mat.length;i++){
+    for(let j=0;j<mat[i].length;j++){
+        if(mat[i][j]%2==0){
+            mat2.push(mat[i][j])
+            console.log(mat2)
+        }
+         else{
+            mat2.push([])
+             console.log(mat2)
+         }
+        
+    }
+}
