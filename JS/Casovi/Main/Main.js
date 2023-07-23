@@ -33,26 +33,26 @@
 
 //Closure - Jedan on principa rada javescripte(Moguce Pitanje za Intervju.)
 //Local scope ne uzima global value.
-// let a = 10
-// function funcA (){
-//     let a =5
-//     console.log(a)
-//     let b = 3
-//     {
-//         console.log(b)
-//     }
-// }
-// function midleA (){
-//     let a =3
-//     console.log(a)
-// }
-// function lastA(){
-//     console.log(a)
-// }
+ let a = 10
+ function funcA (){
+     let a =5
+     console.log(a)
+     let b = 3
+     {
+         console.log(b)
+     }
+ }
+ function midleA (){
+     let a =3
+     console.log(a)
+ }
+ function lastA(){
+     console.log(a)
+ }
 
-// funcA()
-// midleA()
-// lastA()
+ funcA()
+ midleA()
+ lastA()
 
 //Fja koja pravi i vraca objekat
 //22-5-2023
@@ -753,27 +753,27 @@
 // const all = niz.every((el)=>el>4)//Return sFalse
 // console.log(all)
 
-const mat =[
-    [4,12,100,3],
-    [2,5,7,9,3],
-    [11,53,75,87],
-    [3],
-    [4],
-]
-const mat2 = [
+// const mat =[
+//     [4,12,100,3],
+//     [2,5,7,9,3],
+//     [11,53,75,87],
+//     [3],
+//     [4],
+// ]
+// const mat2 = [
     
     
-]
-for(let i=0;i<mat.length;i++){
-    for(let j=0;j<mat[i].length;j++){
-        if(mat[i][j]%2==0){
-            mat2.push(mat[i][j])
-            console.log(mat2)
-        }
-         else{
-            mat2.push([])
-             console.log(mat2)
-         }
+// ]
+// for(let i=0;i<mat.length;i++){
+//     for(let j=0;j<mat[i].length;j++){
+//         if(mat[i][j]%2==0){
+//             mat2.push(mat[i][j])
+//             console.log(mat2)
+//         }
+//          else{
+//             mat2.push("")
+//              console.log(mat2)
+//          }
         
-    }
-}
+//     }
+// }
