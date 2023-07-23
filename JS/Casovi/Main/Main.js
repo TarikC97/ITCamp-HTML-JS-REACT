@@ -431,18 +431,18 @@
 // console.log('Broj stringova je:\n',brojacStringova)
 
 //////////Profesor zadatak/////////
-///Ubaci u svaki niz broj kola.
-// const automobil ={
-//     aldin: ["vw","audi"],
-//     tajra: ["golf","audi","bmw"],
-//     iman: ["peugeot","fiat","citroen"],
-//     bronja: ["pagani","mclaren","Rollce roys"]
-// }
-// var keys = Object.keys(automobil)
-// var values = Object.values(automobil)
-// console.log(values)
-// var auto2 = values.map((el)=>el+el.length)
-// console.log(auto2)
+// Ubaci u svaki niz broj kola.
+//  const automobil ={
+//      aldin: ["vw","audi"],
+//      tajra: ["golf","audi","bmw"],
+//      iman: ["peugeot","fiat","citroen"],
+//      bronja: ["pagani","mclaren","Rollce roys"]
+//  }
+//  var keys = Object.keys(automobil)
+//  var values = Object.values(automobil)
+//  console.log(values)
+//  var auto2 = values.map((el)=>el+el.length)
+//  console.log(auto2)
 
 // //Github search app updated
 // //Prazan div za laoder , prazan div za input , on click doesnt move input above or under.
@@ -607,6 +607,15 @@
 // }
 // fetchData()
 
+// const fetchData6 = ()=>{
+//     let unos = prompt('Unos')
+//     fetch(`https://jsonplaceholder.typicode.com/todos/${unos}`)
+//     .then((response) => response.json())
+//     .then((json)=>console.log(json))
+//     .catch((err)=> console.log(err,"error404"))
+// }
+// fetchData6()
+
 
 ////Mehmed zadatak//////
 // const niz = [
@@ -668,6 +677,20 @@
 //     console.log(result)
 // }
 // fetchData2()
+// const fetchData4 = async(broj,broj2) =>{
+//     const data = await fetch(`https://jsonplaceholder.typicode.com/comments?postId=${broj}&id=${broj2}`)
+//     const result = await data.json()
+//     console.log(result)
+// }
+// fetchData4(1,3)
+
+// const fetchData5 = async()=>{
+//     const broj = prompt('Unesi broj')
+//     const data = await fetch(`https://jsonplaceholder.typicode.com/posts/${broj}/comments`)
+//     const result = await data.json();
+//     console.log(result)
+// }
+// fetchData5()
 
 // const fetchData3 = async (broj,broj2)=>{
 //     // const broj = prompt('Unesi broj')
