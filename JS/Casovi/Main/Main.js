@@ -33,26 +33,26 @@
 
 //Closure - Jedan on principa rada javescripte(Moguce Pitanje za Intervju.)
 //Local scope ne uzima global value.
- let a = 10
- function funcA (){
-     let a =5
-     console.log(a)
-     let b = 3
-     {
-         console.log(b)
-     }
- }
- function midleA (){
-     let a =3
-     console.log(a)
- }
- function lastA(){
-     console.log(a)
- }
+//  let a = 10
+//  function funcA (){
+//      let a =5
+//      console.log(a)
+//      let b = 3
+//      {
+//          console.log(b)
+//      }
+//  }
+//  function midleA (){
+//      let a =3
+//      console.log(a)
+//  }
+//  function lastA(){
+//      console.log(a)
+//  }
 
- funcA()
- midleA()
- lastA()
+//  funcA()
+//  midleA()
+//  lastA()
 
 //Fja koja pravi i vraca objekat
 //22-5-2023
@@ -397,10 +397,10 @@
     //Let,const,arrowfunc moraju prvo da se inicijalizuju.
 
    
-// console.log(ime)//undefined
-// ime = 5//A vrednost ostaje tu, a varijabla ime ide na vrh.
-// console.log(ime)//Inicijalizirali smo varijablu.
-// var ime//POzivamo var na varijablu na vrh
+//  console.log(ime)//undefined
+//  ime = 5//A vrednost ostaje tu, a varijabla ime ide na vrh.
+//  console.log(ime)//Inicijalizirali smo varijablu.
+//  var ime//POzivamo var na varijablu na vrh
 
 // console.log(hdmi)//Temporal dead zone
 // let hdmi//let ne ide na vrh ostaje.
