@@ -1,0 +1,45 @@
+Object:
+	Kolekcija propertija.
+	Sadrzi key,value pair.
+	Freeze:
+		Ne moze da se menja pocetni value.
+	Seal:
+		Mogu da se menjaju tekuci atributi, nema dodavanja.
+Closure:
+	Princip rada JS, Local scope ne uzima global value.
+	
+Klase - Sluze kao sablon za neki objekat.
+	Cetiri principa OOP:
+	Nasledjivanje,Enkapsulacija,Polimorfizam,Abstrakcija.
+	Properti atributa klase:
+	 Static - poziva se samo na osnovu klase,
+	 Public - Mozemo svi pristupiti tom atributu,
+	 Private - Ne moze pristupiti van klase  bez get metode
+	 Protected - Osobinu moze koristiti klasa koja ga nasledjuje a ne sledeca
+Prototype - sve fje unutar klase nalaze se u prototype.
+
+Hoisting:
+	Prilikom kompajlovanja JS fajla sve varijable(var) na vrh fajla salje.
+	Varijabla Let ne ide na vrhu, kao ni const.
+	Varijabla const mora i da se deklarise i inicijalizuje da bi vratila value.
+Callback func:
+	Callback je fja koju prosledjujemo kao argument nekoj drugoj funkciji.
+Asinhroni JS:
+	Promise - ispunjeno ili neispunjeno obecanje,
+	Promise - > pending- fulfill - then(resolve,response)
+			   - reject - catch(error)
+Sinhroni JS:
+	Linija po liniju , od vrha ka dnu.
+	Nema vreme izvrsavanja.
+
+Falsy:
+	Falsy value je nesto sto procenjuje False value,npr za neku varijablu. 
+	undef,null,NaN,0,"",false
+	
+Referentni i Vrednosni tipovi podataka:
+	Referentni: klase,nizovi,objekti,f-je.
+	Primitivni: number,string,boolean,symbol
+function:
+	Blok koda predvidjen da obavi odredjeni zadatak.
+arrow function:
+	Kraca alternativa funkcije.
