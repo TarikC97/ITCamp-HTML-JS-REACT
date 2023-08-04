@@ -1,16 +1,14 @@
 import './App.css';
+import Card from './components/Card';
+import Button from './components/Button';
 
 function App() {
-  const customStyle={
-    fontSize:"70px",
-    color:"blue"
-  };
-  const onClickHandler = () =>console.log('fja')
 
   return (
-    <div className="App">
-       <h1 style={customStyle}>Tarik 115</h1>
-       <button onClick={onClickHandler}>Dugme</button>
+    <div className="app">
+      <Card ime="Tarik Curic" age="1997 rodjen." />
+      <Card ime="Imad Gazdic" age="2005 rodjen." />
+      <Button tekst="Dugme radi" />
     </div>
   );
 }

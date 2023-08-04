@@ -1,0 +1,9 @@
+.card{
+    width: 30vw;
+    height: 30vh;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-align: center;
+    margin: 20px auto;
+    padding-top: 30px;
+  }
