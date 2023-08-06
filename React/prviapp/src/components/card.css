@@ -1,9 +1,12 @@
 .card{
-    width: 30vw;
-    height: 30vh;
+    width: 27%;
+    height: 80%;
     border-radius: 5px;
     border: 2px solid black;
     text-align: center;
-    margin: 20px auto;
-    padding-top: 30px;
   }
+ .img1{
+  width: 100%;
+  height: 50%;
+  margin-bottom: 50px;
+ }

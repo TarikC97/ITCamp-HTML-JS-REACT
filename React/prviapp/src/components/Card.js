@@ -1,16 +1,18 @@
 import React from 'react'
 import "./card.css"
+import Button from './Button'
 
 const Card = (props) => {
 //Destructring object
  //const {ime,age} = props
   return (
     <div className="card">
-    <h1>{props.ime}</h1>
+     {props.image1}
+    <h1>{props.name}</h1>
     <h3>
-       Neki opis kratki o meni.
+       {props.desc}
     </h3>
-    <p>{props.age}</p>
+    <Button price="300$" />
     </div>
   )
 }

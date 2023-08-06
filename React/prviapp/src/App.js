@@ -1,14 +1,23 @@
 import './App.css';
 import Card from './components/Card';
-import Button from './components/Button';
 
 function App() {
 
   return (
     <div className="app">
-      <Card ime="Tarik Curic" age="1997 rodjen." />
-      <Card ime="Imad Gazdic" age="2005 rodjen." />
-      <Button tekst="Dugme radi" />
+      <Card 
+      image1={<img className='img1' src={require('./slika2.jpeg')} alt="slika1" />} 
+      name="Air Force 2" 
+      desc="Branding shoe from Nike always on Top since 1995 to present."  />
+      <Card 
+      image1={<img className='img1' src={require('./slika5.jpg')} alt="slika1" />} 
+      name="Adidas Superstar" 
+      desc="Branding shoe from Adidas always on Top since 2001 to present." />
+      <Card 
+      image1={<img className='img1' src={require('./slika6.jpg')} alt="slika1" />} 
+      name="Puma Sport 1" 
+      desc="Branding shoe from Puma always on Top since 2003 to present."
+       />
     </div>
   );
 }

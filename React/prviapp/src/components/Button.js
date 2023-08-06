@@ -4,8 +4,8 @@ import "./button.css"
 //(props) <=> {tekst}
 const Button = (props) => {
   return (
-    <div>
-        <button className='button'>{props.tekst}</button>
+    <div className='btn'>
+        <button onClick={()=>alert('Product successfully added to the cart!')} className='button'>{props.price}</button>
     </div>
   )
 }
