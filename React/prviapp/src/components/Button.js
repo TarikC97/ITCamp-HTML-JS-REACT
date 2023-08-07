@@ -5,7 +5,7 @@ import "./button.css"
 const Button = (props) => {
   return (
     <div className='btn'>
-        <button onClick={()=>alert('Product successfully added to the cart!')} className='button'>{props.price}</button>
+        <button onClick={()=>alert('Product successfully added to the cart!')} className='button'>{props.body}</button>
     </div>
   )
 }

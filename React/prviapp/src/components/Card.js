@@ -3,6 +3,8 @@ import "./card.css"
 import Button from './Button'
 
 const Card = (props) => {
+  
+const {price}= props
 //Destructring object
  //const {ime,age} = props
   return (
@@ -12,7 +14,7 @@ const Card = (props) => {
     <h3>
        {props.desc}
     </h3>
-    <Button price="300$" />
+    <Button body={price} />
     </div>
   )
 }
