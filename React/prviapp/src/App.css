@@ -6,10 +6,12 @@
 .app{
   margin-top: 2%;
   width: 100vw;
-  height: 100vh;
+  height: 20vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
+  gap: 5px;
+  font-size: 30px;
 }
 h3{
   margin-top: 10px;

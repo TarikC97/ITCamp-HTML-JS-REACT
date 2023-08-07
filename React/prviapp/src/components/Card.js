@@ -3,6 +3,7 @@ import "./card.css"
 import Button from './Button'
 
 const Card = (props) => {
+
   
 const {price}= props
 //Destructring object
