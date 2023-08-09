@@ -6,11 +6,11 @@
 .app{
   margin-top: 2%;
   width: 100vw;
-  height: 20vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: row;
-  gap: 5px;
+  gap: 10px;
   font-size: 30px;
 }
 h3{
@@ -18,4 +18,21 @@ h3{
 }
 p{
   margin-top: 10px;
+}
+button{
+    width: 15vw;
+    height: 10%;
+    border-radius: 5px;
+    background-color: silver;
+    color: black;
+    text-align: center;
+    font-size: x-large;
+    margin-top: 20%;
+    font-size: 40px;
+    transition: 0.3s;
+}
+button:hover{
+  scale: 1.1;
+  cursor: pointer;
+  color: black;
 }
