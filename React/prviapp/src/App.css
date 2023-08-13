@@ -12,14 +12,9 @@
   flex-direction: row;
   gap: 10px;
   font-size: 30px;
+  overflow-y: hidden;
 }
-h3{
-  margin-top: 10px;
-}
-p{
-  margin-top: 10px;
-}
-button{
+.button2{
     width: 15vw;
     height: 10%;
     border-radius: 5px;
@@ -27,12 +22,8 @@ button{
     color: black;
     text-align: center;
     font-size: x-large;
-    margin-top: 20%;
     font-size: 40px;
     transition: 0.3s;
-}
-button:hover{
-  scale: 1.1;
-  cursor: pointer;
-  color: black;
+    margin-bottom: 100%;
+    margin-left: 40%;
 }

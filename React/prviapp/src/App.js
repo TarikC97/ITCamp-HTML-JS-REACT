@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Card from './components/Card';
-import { customProducts } from './data/data';
+// import { customProducts } from './data/data';
 // import Button from './components/Button';
 
 function App() {
@@ -21,13 +21,22 @@ function App() {
 console.log(data)
 
   return (
+    <>
     <div className="app">
-      {data.map((product)=> product.price>500)}
+      {data.map((product,i)=> product.category ==='smartphones' ? 
+      <Card key={i} 
+      name={product.title} 
+      desc={product.description} 
+      price={product.price}
+      discount={product.discountPercentage}
+      brand={product.brand}
+      stock={product.stock}
+      />: console.log('Not smartphone!'))}
+      
       {/* {customProducts.map((product,i)=> <Card key={i} name={product.title} desc={product.description} price={product.price} />)} */}
       {/* {broj.map((el)=>{
         return <Button  body={el}/>
       })} */}
-      <button onClick={()=> fetchData()}>Fetch data</button>
       {/* <button className='button'onClick={()=>{setBroj(()=>broj+1)}}>Increment</button>
       {broj}
       <button className='button'onClick={()=>{setBroj(()=>broj-1)}}>Decrement</button> */}
@@ -48,6 +57,8 @@ console.log(data)
       price="120$"
        /> */}
     </div>
+          <button className='button2' onClick={()=> fetchData()}>Fetch data</button>
+    </>
   );
 }
 
