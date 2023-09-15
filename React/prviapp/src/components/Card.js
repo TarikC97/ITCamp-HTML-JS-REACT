@@ -1,13 +1,13 @@
 import React from 'react'
+import './Card.css'
 
 const Card = (props) => {
-    var ime = ""
-    var prezime = ""
   return (
-    <>
-    <h1>Ime:{props.ime}</h1>
-    <h1>Prezime:{props.prezime}</h1>
-    </>
+    <div className='car'>
+      <h1>Ime:{props.ime}</h1>
+      <h1>Prezime:{props.prezime}</h1>
+      <h1>Godine:{props.godine}</h1>
+    </div>
   )
 }
 

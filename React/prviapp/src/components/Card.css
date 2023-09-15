@@ -1,0 +1,11 @@
+.car{
+    height:400px;
+    width: 400px;
+    background-color:whitesmoke;
+    border: 1px solid gray;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
