@@ -3,13 +3,13 @@ import Card from './components/Card'
 
 function App() {
   const niz = [
-      { ime: 'Tarik', prezime: 'Curic', godine: '25' },
-      { ime: 'Hukic', prezime: 'Gorcevic', godine: '19' },
-    ] 
+    { ime: 'Cips', marka: 'Marbo', cena: '50', status: false },
+    { ime: 'Cips', marka: 'Chipsy', cena: '40', status: true },
+  ]
   return (
     <div className='app'>
       {niz.map((el) => (
-        <Card ime={el.ime} prezime={el.prezime} godine={el.godine} />
+        <Card ime={el.ime} marka={el.marka} cena={el.cena} status={el.status} />
       ))}
     </div>
   )
