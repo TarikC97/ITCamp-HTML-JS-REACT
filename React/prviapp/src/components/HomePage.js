@@ -17,6 +17,7 @@ const HomePage = () => {
       <h1>Welcome to my HomePage</h1>
       <p>If you want to see products , go to </p>
       <Link to='/products'>Products</Link>
+      <Link to='/posts'>Posts</Link>
     </div>
   )
 }
