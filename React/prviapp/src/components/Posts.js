@@ -1,13 +1,14 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 const Posts = () => {
   const [post, setPost] = useState([])
+  const navigate = useNavigate()
   useEffect(() => {
     axios.get('https://dummyjson.com/posts').then((response) => {
       setPost(response.data.posts)
-      // console.log(response.data.products)
     })
   }, [])
   console.log(post)
@@ -22,7 +23,11 @@ const Posts = () => {
     >
       Posts
       {post.map((pot) => (
-        <h1 style={{ textAlign: 'center' }} key={pot.id}>
+        <h1
+          onClick={() => navigate(`/posts/${pot.id}`)}
+          style={{ textAlign: 'center' }}
+          key={pot.id}
+        >
           {pot.title}
         </h1>
       ))}

@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './components/HomePage'
 import Posts from './components/Posts'
 import Products from './components/Products'
+import SinglePost from './components/SinglePost'
 
 function App() {
   // const niz = [
@@ -26,6 +27,7 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='/posts' element={<Posts />} />
           <Route path='products' element={<Products />} />
+          <Route path='/posts/:id' element={<SinglePost />} />
         </Routes>
       </BrowserRouter>
     </div>
