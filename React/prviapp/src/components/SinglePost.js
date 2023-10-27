@@ -11,7 +11,7 @@ const SinglePost = () => {
       setSinglePost(response.data)
     })
   }, [])
-  console.log(singlePost)
+  //console.log(singlePost)
   return (
     <div
       style={{
